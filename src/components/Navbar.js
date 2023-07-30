@@ -9,19 +9,19 @@ const Navbar = () => {
         <div className="menu-items">
           <ul>
             <li>
-              <a href="#">Find Talent</a>
+              <a href="https://dribbble.com/hiring">Find Talent</a>
             </li>
             <li>
-              <a href="#">For Designer</a>
+              <a href="https://dribbble.com/for-designers">For Designer</a>
             </li>
             <li>
-              <a href="#">Inspiration</a>
+              <a href="https://dribbble.com/shots/popular">Inspiration</a>
             </li>
             <li>
-              <a href="#">Learn Design</a>
+              <a href="https://dribbble.com/learn">Learn Design</a>
             </li>
             <li>
-              <a href="#">Go Pro</a>
+              <a href="https://dribbble.com/pro">Go Pro</a>
             </li>
           </ul>
         </div>
