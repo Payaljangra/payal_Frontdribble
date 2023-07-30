@@ -1,0 +1,114 @@
+.product{
+    display: flex;
+    flex-direction: column;
+}
+
+.product_image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    position: relative;
+}
+.product_image::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(0, #5d5c5c 0%,rgb(0,0,0,0.2) 70%,transparent 100%);
+    height: 25%;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.product_image:hover::after{
+    opacity: 1;
+}
+
+.product_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.product_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+.user_info{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.user_info img{
+    border-radius: 50%;
+}
+
+.product__user-name{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.product_type{
+    width: fit-content;
+    font-size: 1.1rem;
+    background-color: #c7c4c4;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0rem 0.3rem;
+    border-radius: 4px;
+}
+
+.product_analy{
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+.product_analy figure{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+.product_analy .analy_icon{
+    font-size: 1.5rem;
+    color: #c0bdbd;
+}
+
+/*Product actions on hover*/
+.product_actions{
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.product_actions span{
+    font-size: 1.5rem;
+}
+.product_actions__icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.product_actions__icon{
+    font-size: 2.5rem;
+    color: #000;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+.product_image:hover .product_actions{
+    opacity: 1;
+    visibility: visible;
+}

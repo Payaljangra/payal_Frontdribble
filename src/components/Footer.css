@@ -1,0 +1,49 @@
+.footer{
+    padding: 8rem;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 1rem;
+    background-color: rgb(250, 250, 251);
+}
+.icon{
+    height: 2rem;
+}
+.footer_column{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.footer_column-item{
+    display: flex;
+    flex-direction: column;
+}
+.footer_column-item h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.footer_column-item ul{
+    list-style: none;
+    font-size: 1.5rem;
+}
+.footer_column-item ul li:hover{
+    cursor: pointer;
+}
+.footer_column-item ul li:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+ul li{
+    color: #3d3d4e;
+}
+
+.dribble-info{
+    gap: 2.5rem;
+}
+.dribble-info p{
+    font-size: 1.5rem;
+}
+
+.dribble-info .social-links-container{
+    display: flex;
+    gap: 2rem;
+}

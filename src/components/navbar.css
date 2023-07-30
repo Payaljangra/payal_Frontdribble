@@ -1,0 +1,232 @@
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.logo h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  background-color: black;
+  font-family: "Dancing Script", cursive;
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+}
+
+.main-navbar {
+  height: 100px;
+  display: grid;
+  margin: 2px;
+  grid-template-columns: 5rem 2fr 1fr 2fr 5rem;
+  box-shadow: rgba(201, 201, 212, 0.25) 0px 50px 100px -20px,
+    rgba(231, 224, 224, 0.3) 0px 30px 60px -30px;
+}
+
+.menu-items {
+  grid-column: 2/3;
+}
+.menu-items ul {
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-items ul li {
+  font-size: 15px;
+  font-weight: 650;
+}
+.menu-items ul li a {
+  color: black;
+  transition: 0.5s;
+}
+.menu-items ul li:hover > a {
+  transform-origin: left;
+  color: rgb(15, 15, 15);
+  transition: 0.5s;
+}
+.logo {
+  display: grid;
+  grid-column: 3/4;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-signup {
+  grid-column: 4/5;
+}
+
+.login-signup ul {
+  height: 8rem;
+  display: grid;
+
+  grid-template-columns: 3fr repeat(3, 1fr);
+  justify-content: flex-end;
+  align-items: center;
+}
+.login-signup ul li:first-child {
+  grid-column: 2/3;
+}
+.login-signup ul li {
+  font-size: 15px;
+  font-weight: 650;
+}
+.login-signup ul li a {
+  color: black;
+  transition: 0.5s;
+}
+.login-signup ul li:hover > a {
+  transform-origin: left;
+  color: rgb(15, 15, 15);
+  transition: 0.5s;
+}
+.login-signup .hamburger-menu {
+  display: none;
+}
+.login-signup .hamburger-menu {
+  display: none;
+}
+.hamburger-menu {
+  display: none;
+}
+#signup {
+  background-color: rgb(242, 235, 235);
+  border: none;
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 550;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  color: black;
+  border-radius: 10px;
+}
+
+#hire {
+  background-color: rgb(242, 235, 235);
+  border: none;
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 550;
+  font-size: 16px;
+  margin: 10px;
+  color: black;
+  border-radius: 10px;
+}
+
+.landing-section h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+.landing-section p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+/* responsive css style */
+
+@media (max-width: 1080px) {
+  .main-navbar {
+    height: 8rem;
+    grid-template-columns: 2rem 3fr 3fr 2fr 2rem;
+  }
+
+  .logo,
+  .menu-items ul,
+  .login-signup ul {
+    height: 8rem;
+  }
+  .login-signup .hamburger-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 998px) {
+  .main-navbar {
+    height: 7rem;
+    grid-template-columns: 2rem 3fr 2fr 3fr 2rem;
+  }
+  .login-signup ul {
+    height: 7rem;
+  }
+}
+
+@media (max-width: 798px) {
+  .main-navbar {
+    height: 6rem;
+    grid-template-columns: 1rem 2fr 3fr 1fr 1rem;
+  }
+  .logo,
+  .login-signup ul {
+    height: 4rem;
+  }
+  .menu-items ul li {
+    font-size: 10px;
+  }
+  #signup {
+    background-color: rgb(242, 235, 235);
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 550;
+    display: inline-block;
+    font-size: 10px;
+    margin: 10px;
+    color: black;
+    border-radius: 10px;
+  }
+
+  #hire {
+    background-color: rgb(242, 235, 235);
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 550;
+    font-size: 10px;
+    margin: 10px;
+    color: black;
+    border-radius: 10px;
+  }
+
+  .landing-section {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-navbar {
+    height: 6rem;
+    grid-template-columns: 1rem 1fr 4fr 1fr 1rem;
+  }
+  .logo,
+  .login-signup ul {
+    height: 6rem;
+  }
+  .logo h2 {
+    font-size: 2rem;
+  }
+  .login-signup {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .landing-section h1 {
+    font-size: 2rem;
+    align-items: center;
+  }
+  .landing-section p {
+    font-size: 1rem;
+    align-items: center;
+  }
+}
